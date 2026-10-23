@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Catálogo — Eimah 3D</title>
+  <meta name="description" content="Catálogo de peças impressas em 3D pela Eimah 3D: decoração, presentes, colecionáveis e utilidades personalizáveis.">
+  <link rel="icon" href="assets/logo.jpg" type="image/jpeg">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    (function () {
+      var saved = null;
+      try { saved = localStorage.getItem('eimah-theme'); } catch (error) {}
+      var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.setAttribute('data-theme', saved || (prefersDark ? 'dark' : 'light'));
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Eimah 3D — página inicial">
+        <img src="assets/logo.jpg" alt="Logomarca Eimah 3D" width="46" height="46">
+      </a>
+
+      <nav class="site-nav" id="menu-principal" data-nav aria-label="Menu principal">
+        <ul>
+          <li><a href="quem-somos.html">Quem somos</a></li>
+          <li><a href="catalogo.html" aria-current="page">Catálogo</a></li>
+          <li><a href="pedido.html">Pedido</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+
+      <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false" aria-label="Ativar modo escuro" title="Ativar modo escuro">
+        <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="4"></circle>
+          <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>
+        </svg>
+        <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path>
+        </svg>
+        <span class="theme-label" data-theme-label>Modo escuro</span>
+      </button>
+
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Você está aqui">
+          <ol>
+            <li><a href="index.html">Início</a></li>
+            <li aria-current="page">Catálogo</li>
+          </ol>
+        </nav>
+        <h1>Catálogo</h1>
+        <p>Peças impressas em 3D para decorar, presentear e organizar. Cores, tamanhos e detalhes podem ser combinados no pedido.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <!-- Catálogo provisório: substituir nomes, descrições e imagens pelos
+             produtos reais publicados em https://www.instagram.com/eimah3d -->
+        <div class="catalog-toolbar">
+          <p class="catalog-count"><strong>9 peças</strong> no catálogo</p>
+          <a class="btn btn--outline" href="pedido.html">Quero algo personalizado</a>
+        </div>
+
+        <div class="product-grid">
+          <article class="product-card">
+            <div class="product-media">
+              <span class="product-tag">Decoração</span>
+              <img src="assets/img/produto-1.svg" alt="Vaso geométrico impresso em 3D" width="600" height="450" loading="lazy">
+            </div>
+            <div class="product-body">
+              <h2>Vaso geométrico</h2>
+              <p class="product-desc">Vaso de mesa com formas facetadas. Disponível em diversas cores.</p>
+              <div class="product-footer">
+                <span class="product-price">Sob consulta</span>
+                <a class="btn btn--primary" href="https://wa.me/5585996253954?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20produto%3A%20Vaso%20geom%C3%A9trico" target="_blank" rel="noopener noreferrer">Pedir</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-media">
+              <span class="product-tag">Decoração</span>
+              <img src="assets/img/produto-2.svg" alt="Luminária personalizada impressa em 3D" width="600" height="450" loading="lazy">
+            </div>
+            <div class="product-body">
+              <h2>Luminária personalizada</h2>
+              <p class="product-desc">Luminária com desenho e cor escolhidos por você para o seu espaço.</p>
+              <div class="product-footer">
+                <span class="product-price">Sob consulta</span>
+                <a class="btn btn--primary" href="https://wa.me/5585996253954?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20produto%3A%20Lumin%C3%A1ria%20personalizada" target="_blank" rel="noopener noreferrer">Pedir</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-media">
+              <span class="product-tag">Presentes</span>
+              <img src="assets/img/produto-3.svg" alt="Chaveiro personalizado impresso em 3D" width="600" height="450" loading="lazy">
+            </div>
+            <div class="product-body">
+              <h2>Chaveiro personalizado</h2>
+              <p class="product-desc">Nome, iniciais ou tema favorito em um chaveiro feito para presentear.</p>
+              <div class="product-footer">
+                <span class="product-price">Sob consulta</span>
+                <a class="btn btn--primary" href="https://wa.me/5585996253954?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20produto%3A%20Chaveiro%20personalizado" target="_blank" rel="noopener noreferrer">Pedir</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-media">
+              <span class="product-tag">Colecionáveis</span>
+              <img src="assets/img/produto-4.svg" alt="Action figure impressa em 3D" width="600" height="450" loading="lazy">
+            </div>
+            <div class="product-body">
+              <h2>Action figure</h2>
+              <p class="product-desc">Personagens e miniaturas para colecionar, decorar ou presentear.</p>
+              <div class="product-footer">
+                <span class="product-price">Sob consulta</span>
+                <a class="btn btn--primary" href="https://wa.me/5585996253954?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20produto%3A%20Action%20figure" target="_blank" rel="noopener noreferrer">Pedir</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-media">
+              <span class="product-tag">Utilidades</span>
+              <img src="assets/img/produto-5.svg" alt="Organizador de mesa impresso em 3D" width="600" height="450" loading="lazy">
+            </div>
+            <div class="product-body">
+              <h2>Organizador de mesa</h2>
+              <p class="product-desc">Suporte para manter acessórios, cabos e pequenos objetos no lugar.</p>
+              <div class="product-footer">
+                <span class="product-price">Sob consulta</span>
+                <a class="btn btn--primary" href="https://wa.me/5585996253954?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20produto%3A%20Organizador%20de%20mesa" target="_blank" rel="noopener noreferrer">Pedir</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-media">
+              <span class="product-tag">Utilidades</span>
+              <img src="assets/img/produto-6.svg" alt="Porta-caneta impresso em 3D" width="600" height="450" loading="lazy">
+            </div>
+            <div class="product-body">
+              <h2>Porta-caneta</h2>
+              <p class="product-desc">Peça de mesa para lápis, canetas e pincéis, com acabamento liso.</p>
+              <div class="product-footer">
+                <span class="product-price">Sob consulta</span>
+                <a class="btn btn--primary" href="https://wa.me/5585996253954?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20produto%3A%20Porta-caneta" target="_blank" rel="noopener noreferrer">Pedir</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-media">
+              <span class="product-tag">Decoração</span>
+              <img src="assets/img/produto-7.svg" alt="Placa decorativa impressa em 3D" width="600" height="450" loading="lazy">
+            </div>
+            <div class="product-body">
+              <h2>Placa decorativa</h2>
+              <p class="product-desc">Placas com nomes, frases ou temas para quartos, salas e escritórios.</p>
+              <div class="product-footer">
+                <span class="product-price">Sob consulta</span>
+                <a class="btn btn--primary" href="https://wa.me/5585996253954?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20produto%3A%20Placa%20decorativa" target="_blank" rel="noopener noreferrer">Pedir</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-media">
+              <span class="product-tag">Colecionáveis</span>
+              <img src="assets/img/produto-8.svg" alt="Miniatura impressa em 3D" width="600" height="450" loading="lazy">
+            </div>
+            <div class="product-body">
+              <h2>Miniatura</h2>
+              <p class="product-desc">Miniaturas de cenários, veículos e personagens com riqueza de detalhes.</p>
+              <div class="product-footer">
+                <span class="product-price">Sob consulta</span>
+                <a class="btn btn--primary" href="https://wa.me/5585996253954?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20produto%3A%20Miniatura" target="_blank" rel="noopener noreferrer">Pedir</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-media">
+              <span class="product-tag">Utilidades</span>
+              <img src="assets/img/produto-9.svg" alt="Suporte de celular impresso em 3D" width="600" height="450" loading="lazy">
+            </div>
+            <div class="product-body">
+              <h2>Suporte de celular</h2>
+              <p class="product-desc">Suporte de mesa estável para assistir, estudar ou trabalhar.</p>
+              <div class="product-footer">
+                <span class="product-price">Sob consulta</span>
+                <a class="btn btn--primary" href="https://wa.me/5585996253954?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20produto%3A%20Suporte%20de%20celular" target="_blank" rel="noopener noreferrer">Pedir</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <p class="catalog-note">
+          <strong>Imagens ilustrativas.</strong> Cores, tamanhos e acabamentos são combinados no pedido. Não encontrou o que procura? Faça um <a href="pedido.html">pedido especial</a>.
+        </p>
+      </div>
+    </section>
+
+    <section class="cta-band" aria-labelledby="cta-titulo">
+      <div class="container">
+        <h2 id="cta-titulo">Quer uma peça fora do catálogo?</h2>
+        <p>Personalização é o nosso forte. Conte a ideia ou envie o arquivo 3D para receber um orçamento.</p>
+        <div class="cta-actions">
+          <a class="btn btn--primary" href="pedido.html">Pedido especial</a>
+          <a class="btn btn--ghost-light" href="contato.html">Tirar dúvidas</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/logo.jpg" alt="Logomarca Eimah 3D" width="52" height="52">
+          <p>Impressão 3D personalizada: decoração, presentes e projetos sob medida, feitos com cuidado em cada camada.</p>
+        </div>
+
+        <div class="footer-col">
+          <h3>Navegação</h3>
+          <ul>
+            <li><a href="quem-somos.html">Quem somos</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="pedido.html">Pedido</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Contato</h3>
+          <ul>
+            <li><a href="mailto:eimah3d@gmail.com">eimah3d@gmail.com</a></li>
+            <li><a href="https://wa.me/5585996253954" target="_blank" rel="noopener noreferrer">WhatsApp (85) 99625-3954</a></li>
+            <li><a href="https://www.instagram.com/eimah3d" target="_blank" rel="noopener noreferrer">Instagram @eimah3d</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span data-year>2026</span> Eimah 3D. Todos os direitos reservados.</p>
+        <p>Peças impressas em 3D, uma camada por vez.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

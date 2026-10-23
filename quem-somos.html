@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quem somos — Eimah 3D</title>
+  <meta name="description" content="Conheça a Eimah 3D: impressão 3D personalizada para decoração, presentes e projetos sob medida.">
+  <link rel="icon" href="assets/logo.jpg" type="image/jpeg">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    (function () {
+      var saved = null;
+      try { saved = localStorage.getItem('eimah-theme'); } catch (error) {}
+      var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.setAttribute('data-theme', saved || (prefersDark ? 'dark' : 'light'));
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Eimah 3D — página inicial">
+        <img src="assets/logo.jpg" alt="Logomarca Eimah 3D" width="46" height="46">
+      </a>
+
+      <nav class="site-nav" id="menu-principal" data-nav aria-label="Menu principal">
+        <ul>
+          <li><a href="quem-somos.html" aria-current="page">Quem somos</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="pedido.html">Pedido</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+
+      <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false" aria-label="Ativar modo escuro" title="Ativar modo escuro">
+        <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="4"></circle>
+          <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>
+        </svg>
+        <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path>
+        </svg>
+        <span class="theme-label" data-theme-label>Modo escuro</span>
+      </button>
+
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Você está aqui">
+          <ol>
+            <li><a href="index.html">Início</a></li>
+            <li aria-current="page">Quem somos</li>
+          </ol>
+        </nav>
+        <h1>Quem somos</h1>
+        <p>Uma loja de impressão 3D que transforma ideias em peças com significado — para decorar, presentear ou resolver algo do dia a dia.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="about-grid">
+          <!-- Texto provisório: revisar com a bio/descrição reais do Instagram @eimah3d. -->
+          <div class="about-copy">
+            <span class="eyebrow">Nossa história</span>
+            <h2>Ideias que saem do papel e ganham camadas</h2>
+            <p>A <strong>Eimah 3D</strong> trabalha com impressão 3D personalizada. Cada peça começa como uma ideia e termina nas suas mãos, construída camada por camada, com atenção ao acabamento e aos detalhes que fazem diferença.</p>
+            <p>Criamos peças decorativas, presentes personalizados e objetos sob medida. O catálogo está sempre em movimento: novas ideias aparecem no Instagram e podem ser adaptadas em cor, tamanho e detalhes para combinar com o que você imagina.</p>
+            <p>Também recebemos projetos especiais. Se você já tem um arquivo 3D ou apenas um desenho no papel, é só contar a sua ideia — a gente conversa, planeja e imprime.</p>
+            <p>Mais do que vender objetos, queremos entregar <strong>peças feitas com calma</strong>, pensadas para durar e para ter um significado real.</p>
+            <a class="btn btn--outline" href="https://www.instagram.com/eimah3d" target="_blank" rel="noopener noreferrer">Conhecer nosso Instagram</a>
+          </div>
+          <div class="about-media">
+            <img src="assets/img/sobre.svg" alt="Ilustração geométrica de um cubo em impressão 3D nas cores laranja e azul" width="800" height="600">
+          </div>
+        </div>
+
+        <div class="value-grid">
+          <article class="value-card">
+            <span class="value-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3l7 4v10l-7 4-7-4V7l7-4z"></path>
+                <path d="M12 12l7-4M12 12v9M12 12L5 8"></path>
+              </svg>
+            </span>
+            <h3>Projeto sob medida</h3>
+            <p>Cor, tamanho e detalhes definidos junto com você, a partir da sua ideia ou do seu arquivo.</p>
+          </article>
+
+          <article class="value-card">
+            <span class="value-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 20l4-1 10-10a2.8 2.8 0 0 0-4-4L4 15l-1 5z"></path>
+                <path d="M13 6l4 4"></path>
+              </svg>
+            </span>
+            <h3>Acabamento cuidado</h3>
+            <p>Cada impressão passa por conferência e limpeza para chegar até você pronta para usar ou expor.</p>
+          </article>
+
+          <article class="value-card">
+            <span class="value-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 8l-9-5-9 5 9 5 9-5z"></path>
+                <path d="M3 8v8l9 5 9-5V8"></path>
+              </svg>
+            </span>
+            <h3>Produção sob demanda</h3>
+            <p>As peças são feitas após o pedido, o que reduz desperdício e permite personalizar cada detalhe.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band" aria-labelledby="cta-titulo">
+      <div class="container">
+        <h2 id="cta-titulo">Vamos criar a sua peça?</h2>
+        <p>Dê uma olhada no catálogo ou envie o seu projeto. Responder é rápido e sem compromisso.</p>
+        <div class="cta-actions">
+          <a class="btn btn--primary" href="catalogo.html">Ver catálogo</a>
+          <a class="btn btn--ghost-light" href="pedido.html">Pedido especial</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/logo.jpg" alt="Logomarca Eimah 3D" width="52" height="52">
+          <p>Impressão 3D personalizada: decoração, presentes e projetos sob medida, feitos com cuidado em cada camada.</p>
+        </div>
+
+        <div class="footer-col">
+          <h3>Navegação</h3>
+          <ul>
+            <li><a href="quem-somos.html">Quem somos</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="pedido.html">Pedido</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Contato</h3>
+          <ul>
+            <li><a href="mailto:eimah3d@gmail.com">eimah3d@gmail.com</a></li>
+            <li><a href="https://wa.me/5585996253954" target="_blank" rel="noopener noreferrer">WhatsApp (85) 99625-3954</a></li>
+            <li><a href="https://www.instagram.com/eimah3d" target="_blank" rel="noopener noreferrer">Instagram @eimah3d</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span data-year>2026</span> Eimah 3D. Todos os direitos reservados.</p>
+        <p>Peças impressas em 3D, uma camada por vez.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a0f16"/>
+      <stop offset="1" stop-color="#16202c"/>
+    </linearGradient>
+    <radialGradient id="o" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#FFA000" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#FFA000" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="c" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#00C0E0" stop-opacity=".45"/>
+      <stop offset="1" stop-color="#00C0E0" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M60 0H0V60" fill="none" stroke="#ffffff" stroke-opacity=".05"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <circle cx="1250" cy="220" r="420" fill="url(#o)"/>
+  <circle cx="380" cy="760" r="380" fill="url(#c)"/>
+  <g transform="translate(980 300)" opacity=".9">
+    <polygon points="220,0 400,95 220,190 40,95" fill="#ffffff" opacity=".9"/>
+    <polygon points="40,95 220,190 220,360 40,265" fill="#ffffff" opacity=".55"/>
+    <polygon points="400,95 220,190 220,360 400,265" fill="#ffffff" opacity=".72"/>
+  </g>
+</svg>

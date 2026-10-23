@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pedido especial — Eimah 3D</title>
+  <meta name="description" content="Peça um projeto especial em impressão 3D: envie seu arquivo e descreva o objeto que você quer criar.">
+  <link rel="icon" href="assets/logo.jpg" type="image/jpeg">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    (function () {
+      var saved = null;
+      try { saved = localStorage.getItem('eimah-theme'); } catch (error) {}
+      var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.setAttribute('data-theme', saved || (prefersDark ? 'dark' : 'light'));
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Eimah 3D — página inicial">
+        <img src="assets/logo.jpg" alt="Logomarca Eimah 3D" width="46" height="46">
+      </a>
+
+      <nav class="site-nav" id="menu-principal" data-nav aria-label="Menu principal">
+        <ul>
+          <li><a href="quem-somos.html">Quem somos</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="pedido.html" aria-current="page">Pedido</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+
+      <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false" aria-label="Ativar modo escuro" title="Ativar modo escuro">
+        <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="4"></circle>
+          <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>
+        </svg>
+        <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path>
+        </svg>
+        <span class="theme-label" data-theme-label>Modo escuro</span>
+      </button>
+
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Você está aqui">
+          <ol>
+            <li><a href="index.html">Início</a></li>
+            <li aria-current="page">Pedido</li>
+          </ol>
+        </nav>
+        <h1>Pedido especial</h1>
+        <p>Tem um projeto diferente em mente? Descreva o objeto, envie o arquivo 3D (se tiver) e a gente volta com os próximos passos.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="form-layout">
+          <form class="form-card" data-order-form novalidate>
+            <h2>Conte sobre o seu projeto</h2>
+
+            <div class="form-grid">
+              <div class="field">
+                <label for="pedido-nome">Seu nome <span class="req" aria-hidden="true">*</span></label>
+                <input type="text" id="pedido-nome" name="nome" autocomplete="name" required>
+              </div>
+
+              <div class="field">
+                <label for="pedido-contato">E-mail ou telefone <span class="req" aria-hidden="true">*</span></label>
+                <input type="text" id="pedido-contato" name="contato" autocomplete="email" required>
+              </div>
+
+              <div class="field">
+                <label for="pedido-tipo">Tipo de peça</label>
+                <select id="pedido-tipo" name="tipo">
+                  <option>Objeto decorativo</option>
+                  <option>Luminária</option>
+                  <option>Action figure / miniatura</option>
+                  <option>Peça funcional</option>
+                  <option>Protótipo</option>
+                  <option>Outro</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="pedido-quantidade">Quantidade</label>
+                <input type="number" id="pedido-quantidade" name="quantidade" min="1" value="1" inputmode="numeric">
+              </div>
+
+              <div class="field">
+                <label for="pedido-material">Material preferido</label>
+                <select id="pedido-material" name="material">
+                  <option>A combinar</option>
+                  <option>PLA</option>
+                  <option>PETG</option>
+                  <option>Resina</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="pedido-prazo">Prazo desejado</label>
+                <input type="date" id="pedido-prazo" name="prazo">
+                <span class="hint">Opcional. Datas muito próximas podem não ser possíveis.</span>
+              </div>
+
+              <div class="field field--full">
+                <label for="pedido-descricao">Descrição do objeto <span class="req" aria-hidden="true">*</span></label>
+                <textarea id="pedido-descricao" name="descricao" required placeholder="Ex.: um vaso de 15 cm de altura, com formas geométricas, na cor azul. É para presentear."></textarea>
+                <span class="hint">Conte tamanho aproximado, cores, uso e qualquer detalhe importante.</span>
+              </div>
+
+              <div class="field field--full">
+                <label for="pedido-arquivo">Arquivos do projeto</label>
+                <input type="file" id="pedido-arquivo" name="arquivos" data-file-input multiple accept=".stl,.obj,.3mf,.step,.stp,.zip,.pdf,.png,.jpg,.jpeg">
+                <span class="hint">Aceita STL, OBJ, 3MF, STEP, ZIP, PDF e imagens. Você também pode enviar depois pelo WhatsApp.</span>
+                <ul class="file-list" data-file-list aria-live="polite"></ul>
+              </div>
+
+              <div class="field field--full">
+                <label class="checkbox">
+                  <input type="checkbox" name="autorizacao" required>
+                  <span>Entendo que o site não envia os arquivos automaticamente e que vou anexá-los na conversa do WhatsApp. <span class="req" aria-hidden="true">*</span></span>
+                </label>
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <button class="btn btn--whatsapp" type="submit">Enviar pedido pelo WhatsApp</button>
+              <a class="btn btn--outline" href="mailto:eimah3d@gmail.com">Prefiro e-mail</a>
+            </div>
+
+            <p class="form-note">Ao enviar, abrimos o WhatsApp com o resumo do pedido já preenchido. Os arquivos precisam ser anexados manualmente na conversa.</p>
+
+            <div class="form-status" data-form-status role="status" aria-live="polite"></div>
+
+            <noscript>
+              <p class="form-note">Ative o JavaScript ou fale direto pelo WhatsApp: (85) 99625-3954.</p>
+            </noscript>
+          </form>
+
+          <aside aria-label="Como funciona o pedido">
+            <div class="aside-card">
+              <h2>Como funciona</h2>
+              <ol class="aside-list">
+                <li><span><strong>1. Conte a ideia</strong>Preencha a descrição e envie seu arquivo, se já tiver.</span></li>
+                <li><span><strong>2. Conversamos</strong>Alinhamos tamanho, cor, material e prazo pelo WhatsApp.</span></li>
+                <li><span><strong>3. Produzimos</strong>Após a confirmação e o combinado de pagamento, a peça entra na fila de impressão.</span></li>
+                <li><span><strong>4. Entrega</strong>A gente combina a retirada ou o envio com você.</span></li>
+              </ol>
+            </div>
+
+            <div class="aside-card">
+              <h3>Não tem arquivo 3D?</h3>
+              <p class="muted">Sem problema. Descreva a ideia ou envie um desenho/foto de referência. Avaliamos a viabilidade e o custo de modelagem.</p>
+              <a class="btn btn--whatsapp btn--block" href="https://wa.me/5585996253954" target="_blank" rel="noopener noreferrer">Falar no WhatsApp</a>
+            </div>
+
+            <div class="aside-card">
+              <h3>Formatos de arquivo</h3>
+              <p class="muted">STL, OBJ, 3MF, STEP/STP, ZIP, PDF e imagens. Se o arquivo estiver em outro formato, envie pelo WhatsApp para avaliarmos.</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/logo.jpg" alt="Logomarca Eimah 3D" width="52" height="52">
+          <p>Impressão 3D personalizada: decoração, presentes e projetos sob medida, feitos com cuidado em cada camada.</p>
+        </div>
+
+        <div class="footer-col">
+          <h3>Navegação</h3>
+          <ul>
+            <li><a href="quem-somos.html">Quem somos</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="pedido.html">Pedido</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Contato</h3>
+          <ul>
+            <li><a href="mailto:eimah3d@gmail.com">eimah3d@gmail.com</a></li>
+            <li><a href="https://wa.me/5585996253954" target="_blank" rel="noopener noreferrer">WhatsApp (85) 99625-3954</a></li>
+            <li><a href="https://www.instagram.com/eimah3d" target="_blank" rel="noopener noreferrer">Instagram @eimah3d</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span data-year>2026</span> Eimah 3D. Todos os direitos reservados.</p>
+        <p>Peças impressas em 3D, uma camada por vez.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
